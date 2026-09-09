@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cafeteria Campus</title>
+	<link rel="stylesheet" href="style_form.css">
+	<!-- Se agregó 'defer' aquí -->
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<div class="contenedor">
+
+		<h1>Cafetería Campus</h1>
+		<h2>Pedido</h2>
+		
+		<label>Producto:</label>
+		<select id="producto">
+			<option value="35">Café - $35</option>
+			<option value="25">Té - $25</option>
+			<option value="40">Pan dulce - $40</option>
+		</select>
+
+		<label>Cantidad:</label>
+		<input type="number" id="cantidad" min="1" value="1">
+		
+		<button type="button" onclick="calcularTotal()">Calcular total</button>
+
+		<label id="total">Total: $0</label>
+		
+		<label>Nombre del cliente:</label>
+		<input type="text" id="nombre">
+		
+		<button type="button" onclick="realizarPedido()">
+			Confirmar pedido
+		</button>
+		
+	</div>
+</body>
+
+</html>
